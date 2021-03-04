@@ -1,0 +1,17 @@
+database = gruppo concessionari fakename
+tabella = concessionario 1
+
+id              PK      BIGINT          AUTO_INCREMENT
+marca                   VARCHAR(50)     NOTNULL
+modello                 VARCHAR(50)     NOTNULL
+anno                    YEAR            NOTNULL
+numero telaio           VARCHAR(17)     NOTNULL UNIQUE
+cilindrata_cc           SMALL           NOTNULL   
+alimentazione           VARCHAR(20)     NOTNULL
+segmento                VARCHAR(1)      NULL
+usato                   TYNINT          NOTNULL
+dettagli usato          TEXT            NULL
+prezzo_euro             DOUBLE(10,2)    NOTNULL
+colore                  VARCHAR(30)     NOTNULL DEFAULT("white")    // ha senso metter notnull se c'è default?
+porte                   TYNINT          NOTNULL                     // boolean
+venduto                 TYNINT          NOTNULL                     // boolean
